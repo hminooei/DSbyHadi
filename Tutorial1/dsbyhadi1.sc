@@ -7,7 +7,7 @@
 %md
 
 #### Spark ML:
-  works with DataFrames (vs. Spark Mllib works with RDDs)
+works with DataFrames (vs. Spark Mllib works with RDDs)
 
 %md
 
