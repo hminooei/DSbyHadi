@@ -19,6 +19,7 @@
 
 (from spark.apache.org)
 
+
 import org.apache.spark.sql.DataFrame
 import org.apache.spark.sql.types._
 
@@ -27,17 +28,17 @@ val schemaStruct =
     StructField("state", StringType, false) ::
       StructField("gender", StringType, false) ::
       StructField("income", DoubleType, false) ::
-      StructField("owns_car", BooleanType, true) :: Nil)
+      StructField("owns_car", StringType, true) :: Nil)
 
-val data = spark
+val dataDF = spark
   .read
   .schema(schemaStruct)
   .option("header", "true")
   .csv("/Users/hadi.minooei/Documents/DSbyHadi/car_ownership.csv")
 
-data.count
-data.columns
-data.printSchema
+dataDF.count
+dataDF.columns
+dataDF.printSchema
 
 // We need to predict owns_car --> response
 // Three features to be used: state, gender and income
