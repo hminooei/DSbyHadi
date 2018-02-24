@@ -1,0 +1,14 @@
+id,income,state,gender,owns_car
+1,40000.0,CA,male,false
+2,50000.0,CA,female,false
+3,35000.0,UT,female,true
+4,20000.0,UT,female,false
+5,120000.0,CA,male,true
+6,40000.0,TX,male,true
+7,41000.0,TX,male,false
+8,55000.0,CA,male,true
+9,40000.0,UT,male,true
+10,100000.0,CA,female,true
+11,80000.0,CA,male,true
+12,75000.0,TX,female,true
+13,75000.0,TX,female,false
