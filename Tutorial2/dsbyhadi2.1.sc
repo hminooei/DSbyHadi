@@ -25,9 +25,10 @@ import org.apache.spark.sql.types._
 
 val schemaStruct =
   StructType(
-    StructField("state", StringType, false) ::
-      StructField("gender", StringType, false) ::
+    StructField("id", IntegerType, false) ::
       StructField("income", DoubleType, false) ::
+      StructField("state", StringType, false) ::
+      StructField("gender", StringType, false) ::
       StructField("owns_car", StringType, true) :: Nil)
 
 val dataDF = spark
